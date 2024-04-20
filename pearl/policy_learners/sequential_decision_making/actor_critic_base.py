@@ -113,8 +113,8 @@ class ActorCriticBase(PolicyLearner):
 
         self._action_dim: int = (
             self.action_representation_module.representation_dim
-            if self.is_action_continuous
-            else self.action_representation_module.max_number_actions
+            # if self.is_action_continuous
+            # else self.action_representation_module.max_number_actions
         )
 
         if actor_network_instance is not None:
